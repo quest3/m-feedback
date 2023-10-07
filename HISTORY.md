@@ -1,5 +1,9 @@
 # History
 
+## 3.0.0
+
+- upgrade dependencies
+
 ## 2.0.0
 
 - remove props like `onTouchStart`, `onTouchMove`, `onTouchEnd`, `onTouchCancel`,`onMouseDown`, `onMouseUp`, `onMouseLeave` from `TouchFeedback`
