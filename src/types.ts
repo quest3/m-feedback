@@ -1,4 +1,6 @@
-export { default as TouchFeedback } from './index'
+import TouchFeedback from './index'
+
+export default TouchFeedback
 export interface TouchFeedbackProps {
     disabled?: boolean;
     activeClassName?: string;
