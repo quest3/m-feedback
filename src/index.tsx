@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 import classNames from "classnames";
-
-
-export interface TouchFeedbackProps {
-    disabled?: boolean;
-    activeClassName?: string;
-    activeStyle?: any;
-    children?: any;
-    style?: any;
-    className?: string;
-}
+import { TouchFeedbackProps } from "./types";
 
 export default function TouchFeedback(props: TouchFeedbackProps) {
     const { children, disabled = false, activeClassName, activeStyle } = props;

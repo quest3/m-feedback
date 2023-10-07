@@ -21,7 +21,7 @@
   "files": ["src"],
   "license": "MIT",
   "main": "./src/index",
-  "module": "./src/index",
+  "typings": "./src/types.ts",
   "scripts": {
     "prepare": "husky install"
   },
