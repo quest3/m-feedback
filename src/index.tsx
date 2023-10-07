@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 
-export default function TouchFeedback(props: {
+
+export interface TouchFeedbackProps {
     disabled?: boolean;
     activeClassName?: string;
     activeStyle?: any;
     children?: any;
-}) {
+    style?: any;
+    className?: string;
+}
+
+export default function TouchFeedback(props: TouchFeedbackProps) {
     const { children, disabled = false, activeClassName, activeStyle } = props;
 
     const [active, setActive] = useState(false);
@@ -53,7 +58,7 @@ export default function TouchFeedback(props: {
     };
 
     if (!disabled && active) {
-        const { style, className } = children.props;
+        const { style, className } = children?.props || {};
 
         return React.cloneElement(children, {
             className: classNames(className, activeClassName),
